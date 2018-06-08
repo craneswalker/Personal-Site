@@ -1,28 +1,55 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div id="App">
+    <Navbar/>
+    <Jumbotron/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Navbar from './components/Navbar'
+import Jumbotron from './components/Jumbotron'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Navbar,
+    Jumbotron
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@font-face {
+    font-family: norwester;
+    src: url(assets/fonts/norwester.otf);
+}
+#App{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.norwester-white {
+  color: white;
+  font-family: norwester;
+}
+.background-navy {
+  background: rgb(50,76,104);	  
+}
+.norwester-navy {
+  color:  rgb(50,76,104);	
+  font-family: norwester; 
+}
+.background-yellow {
+  background: rgb(255,206,0);  
+}
+.norwester-yellow {
+  color:  rgb(255,206,0);
+  font-family: norwester;
+}
+.title-spacing {
+  letter-spacing: 10px;
+}
+.no-margin {
+  margin: 0px;
 }
 </style>
