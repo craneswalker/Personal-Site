@@ -2,18 +2,21 @@
   <div id="App">
     <Navbar/>
     <Jumbotron/>
+    <Projects/>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar'
-import Jumbotron from './components/Jumbotron'
+import Navbar from '@/components/Navbar'
+import Jumbotron from '@/components/Jumbotron'
+import Projects from '@/components/Projects'
 
 export default {
   name: 'App',
   components: {
     Navbar,
-    Jumbotron
+    Jumbotron,
+    Projects
   }
 }
 </script>
